@@ -1,0 +1,23 @@
+input[type=text], input[type=tel], input[type=password]  {
+    display: block;
+    margin-bottom: 10px;
+}
+form{
+    max-width: 500px;
+    margin: auto;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    background-color: aqua;
+}
