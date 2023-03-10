@@ -4,32 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A simple form</title>
 </head>
+    <title>Simple form</title>
+    <style>
+        input[type=text], input[type=email], input[type=tel], input[type=password] {
+            display: block;
+            margin-bottom: 10px;
+        }
+        form{
+            max-width: 500px;
+            margin: auto;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+        padding: 10px;
+        border: 1px solid wheat;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        }
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover{
+            background-color: green;
+
+        }
+        .error{
+            color:red;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .success{
+            color: green;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 <body>
-    <h1>Simpe Form</h1>
-    <form action="#" method="post">
+    <h1>Simple Form</h1>
+    <form onsubmit="alert('Your response has been recorded')" method="get">
+    <form action="#" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="email">Email address:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" name="phone" required>
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone"required>
 
         <label for="gender">Gender:</label>
         <select id="gender" name="gender" required>
-        <option value=""></option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
         </select>
 
-        <label for="password">Password</label>
+        <label for="password">password</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">submit</button>
-
+        <button type="submit">Submit</button>
     </form>
+    </form>
+    
 </body>
 </html>
