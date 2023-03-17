@@ -12,16 +12,16 @@
             margin-bottom: 10px;
         }
         body{
-            background-color: black;
             display: flex;
             height: 100vh;
             justify-content: center;
             aligh-items: center;
+            color: #fff;
         }
         h1{
             text-align:center;
         }
-        form{
+        .blue{
             max-width: 400px;
             margin: auto;
             width: 10%;
@@ -69,7 +69,7 @@
 <body>
     <h1>Simple Form</h1>
     <form onsubmit="alert('Your response has been recorded')" method="get">
-    <form action="#" method="POST">
+    <form class="blue" action="#" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
